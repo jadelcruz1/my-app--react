@@ -1,13 +1,16 @@
-function List(){
+import Item from "./Item"
+
+function List() {
+    
     return(
 
         <> 
-            <h1>
+            <h1> MINHA LISTA </h1>
              <ul>                    
-                <li>teste list1 </li> 
-                <li>teste list2 </li>
+                <Item marca="ferrari"/> 
+                <Item marca="GM" />
               </ul>  
-            </h1>
+        
 
         </>
     )
