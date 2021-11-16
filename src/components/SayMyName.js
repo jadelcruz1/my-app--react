@@ -1,7 +1,7 @@
-function SayMyName(){
+function SayMyName(props){
     return(
         <div>
-            estudando props simples
+            estudando props simples {props.nome}
         </div>
 
     )

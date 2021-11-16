@@ -10,7 +10,7 @@ function App() {
 
       <HelloWorld />
 
-      <SayMyName/>
+      <SayMyName nome="Jardel"/>
  
     </div>
   );
