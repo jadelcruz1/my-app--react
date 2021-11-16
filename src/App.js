@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          vou conseguir faturar mais de R$ 20.000 por mês e ainda cibseguir namorar aquela loirinha!!!
         </a>
       </header>
     </div>
