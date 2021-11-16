@@ -1,16 +1,14 @@
-function SayMyName(props){
+function SayMyName({ nome, idade, cor, altura}){
     return(
         <div>
-            estudando props simples {props.nome}
+            
+            estudando props simples
+            <p> nome:{nome} </p>
+            <p> Idade:{idade} </p>
+            <p> Cor:{cor} </p>
+            <p> Altura:{altura} </p>
 
-            {props.idade}
-            {props.cor}
-            {props.altura}
-
-
-
-        </div>
-
+    </div>
     )
 }
 

@@ -10,9 +10,7 @@ function App() {
 
       <HelloWorld />
 
-      <SayMyName nome="Jardel" />
-      <SayMyName idade="36" />
-      <SayMyName altura="1,80" />
+      <SayMyName nome="Jardel" idade="36" altura="1,80" cor="preta" />
 
 
  
