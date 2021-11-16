@@ -10,7 +10,11 @@ function App() {
 
       <HelloWorld />
 
-      <SayMyName nome="Jardel"/>
+      <SayMyName nome="Jardel" />
+      <SayMyName idade="36" />
+      <SayMyName altura="1,80" />
+
+
  
     </div>
   );
