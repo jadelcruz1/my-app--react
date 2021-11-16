@@ -10,13 +10,8 @@ function helloWorld (){
                 meu primeiro componente
             </h1>
 
-            < Treino/>
-            < Treino/>
-            < Treino/>< Treino/>
-            < Treino/>
-            < Treino/>
-            < Treino/>
-            < Treino/>
+            
+           
 
 
 
