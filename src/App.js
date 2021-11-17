@@ -3,6 +3,8 @@ import './App.css';
 import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import List from './components/List';
+import Evento from './components/Evento';
+import Forms from './components/Forms';
 
 
 function App() {
@@ -16,6 +18,9 @@ function App() {
 
       <List />
       
+      <Evento />
+
+      < Forms/>
 
     </div>
   );
