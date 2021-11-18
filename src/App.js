@@ -17,10 +17,13 @@ function App() {
       <SayMyName nome="Jardel" idade="36" altura="1,80" cor="preta" />
 
       <List />
+      deixei como comentario para não excluir os dados estudados.
+
+       */}
       
       <Evento />
-      deixei como comentario para não excluir os dados estudados.
-       */}
+          
+      
 
       < Forms/>
 
