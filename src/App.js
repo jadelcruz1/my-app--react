@@ -11,19 +11,22 @@ function App() {
   return (
     <div className="App">
       
-
-      <HelloWorld />
+    {/*
+       <HelloWorld  inativar />
 
       <SayMyName nome="Jardel" idade="36" altura="1,80" cor="preta" />
 
       <List />
       
       <Evento />
+      deixei como comentario para não excluir os dados estudados.
+       */}
 
       < Forms/>
 
+    
     </div>
   );
-}
+  }
 
 export default App;
