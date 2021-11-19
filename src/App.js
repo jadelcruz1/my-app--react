@@ -5,6 +5,7 @@ import SayMyName from './components/SayMyName';
 import List from './components/List';
 import Evento from './components/Evento';
 import Forms from './components/Forms';
+import Condicionais from './components/Condicionais';
 
 
 function App() {
@@ -19,13 +20,15 @@ function App() {
       <List />
       deixei como comentario para não excluir os dados estudados.
 
-       */}
+       
       
-      <Evento />
-          
-      
+      <Evento />    
 
       < Forms/>
+
+      */}
+
+      <Condicionais />
 
     
     </div>
