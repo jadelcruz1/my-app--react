@@ -7,16 +7,21 @@ import Evento from './components/Evento';
 import Forms from './components/Forms';
 import Condicionais from './components/Condicionais';
 import OutraLista from './components/OutraLista';
+import SeuNome from './components/SeuNome';
+import {useState} from 'react'
+import Saudacao from './components/Saudacao';
 
 
 function App() {
+
+  const [nome, setNome] = useState() // para usar no treinamento de State Lift
 
   const meusItens= ['React', 'Angular', 'Django', 'Vue','jquery']
 
   return (
     <div className="App">
 
-      <h1>Renderização de lista </h1>
+      <h1>State Lift</h1>
       
     {/*
        <HelloWorld  inativar />
@@ -31,10 +36,14 @@ function App() {
       < Forms/>
 
       <Condicionais />
+
+       <OutraLista itens={meusItens}/>
        
       */}
 
-      <OutraLista itens={meusItens}/>
+      <SeuNome setNome={setNome} /> 
+      <Saudacao nome={nome}/>
+          
 
       
     
