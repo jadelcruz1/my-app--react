@@ -10,6 +10,10 @@ import OutraLista from './components/OutraLista';
 import SeuNome from './components/SeuNome';
 import {useState} from 'react'
 import Saudacao from './components/Saudacao';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import Contato from './components/pages/Contato';
+import Home from './components/pages/Home';
+import Empresa from './components/pages/Empresa';
 
 
 function App() {
@@ -21,7 +25,7 @@ function App() {
   return (
     <div className="App">
 
-      <h1>State Lift</h1>
+      <h1>React Router</h1>
       
     {/*
        <HelloWorld  inativar />
@@ -38,15 +42,46 @@ function App() {
       <Condicionais />
 
        <OutraLista itens={meusItens}/>
+
+       <SeuNome setNome={setNome} /> 
+      <Saudacao nome={nome}/>
        
       */}
+      <Router>
 
-      <SeuNome setNome={setNome} /> 
-      <Saudacao nome={nome}/>
-          
+          <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
 
-      
-    
+              <li>
+                <Link to="/Empresa">empresa</Link>
+              </li>
+
+              <li>
+                <Link to="/Contato">contato</Link>
+              </li>
+          </ul>
+
+          <Routes>
+
+            <Route path='/welcome' element={<Home>} >
+              <Home />
+            <Route>
+
+            <Route path="/contato" element={<contato>} >
+              <Contato />
+            <Route>
+
+            <Route path="/empresa" element={<epresame>} >
+              <Empresa />
+            <Route>
+
+          </Routes>
+
+      <Router>
+
+  
     </div>
   );
   }
