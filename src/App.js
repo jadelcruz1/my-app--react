@@ -45,44 +45,37 @@ function App() {
 
        <SeuNome setNome={setNome} /> 
       <Saudacao nome={nome}/>
-       
+              
       */}
-      <Router>
+      
+<Router>
 
-          <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
+<ul>
+    <li>
+      <Link to="/">Home</Link>
+    </li>
 
-              <li>
-                <Link to="/Empresa">empresa</Link>
-              </li>
+    <li>
+      <Link to="/Empresa">Empresa</Link>
+    </li>
 
-              <li>
-                <Link to="/Contato">contato</Link>
-              </li>
-          </ul>
+    <li>
+      <Link to="/Contato">Contato</Link>
+    </li>
+</ul>
 
-          <Routes>
+<Routes>
 
-            <Route path='/welcome' element={<Home>} >
-              <Home />
-            <Route>
+  <Route path="/" element={<Home/>} />
+  <Route path="/" element={<Contato/>} />
+  <Route path="/" element={<Empresa/>} />    
 
-            <Route path="/contato" element={<contato>} >
-              <Contato />
-            <Route>
+</Routes>
 
-            <Route path="/empresa" element={<epresame>} >
-              <Empresa />
-            <Route>
-
-          </Routes>
-
-      <Router>
+</Router>
 
   
-    </div>
+</div>
   );
   }
 
