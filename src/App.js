@@ -14,6 +14,9 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Contato from './components/pages/Contato';
 import Home from './components/pages/Home';
 import Empresa from './components/pages/Empresa';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+
 
 
 function App() {
@@ -50,19 +53,7 @@ function App() {
       
 <Router>
 
-<ul>
-    <li>
-      <Link to="/">Home</Link>
-    </li>
-
-    <li>
-      <Link to="/Empresa">Empresa</Link>
-    </li>
-
-    <li>
-      <Link to="/Contato">Contato</Link>
-    </li>
-</ul>
+      <Navbar />
 
 <Routes>
 
@@ -74,6 +65,7 @@ function App() {
 
 </Router>
 
+<Footer />
   
 </div>
   );
